@@ -18,7 +18,8 @@ retorna todos os projetos
 
 -> /projetos (POST)
 cria um projeto, recebendo um json com o formato:
-{
+
+- {
 id:"some_id",
 tittle:"some_tittle",
 tasks:[
@@ -31,13 +32,13 @@ tasks:[
 
 -> /projetos/{some_id}/tasks (POST)
 Adiciona uma nova task a projeto que existe (com o "some_id"), recebendo seguinte json:
-{
+- {
 tittle: "some_tittle
 }
 
 -> /projetos/{some_id} (PUT)
 Atualiza o titulo de um projeto com o id especificado
-{
+- {
 tittle: "some_tittle"
 }
 
